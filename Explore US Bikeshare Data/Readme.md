@@ -2,7 +2,28 @@
 
 The following project consist to build a python program to analise statistics of for three major cities in the United States—Chicago, New York City, and Washington.
 
-This code consist is structured by 
+
+## Dataset
+
+The provided datasets was for three major US cities contains the same six (6) columns:
+
+    Start Time (e.g., 23-06-2017  15:09:32)
+    End Time (e.g., 23-06-2017  15:14:53)
+    Trip Duration (in seconds - e.g., 321)
+    Start Station (e.g., Wood St & Hubbard St)
+    End Station (e.g., Damen Ave & Chicago Ave)
+    User Type (Subscriber or Customer)
+
+Meanwhile, Chicago and New York City datasets also have the following two columns:
+
+    Gender (Male or Male)
+    Birth Year (e.g., 1975)
+
+Time
+
+## Project structure
+
+This project was structured on the following functions:
 
         city, month, day = get_filters()
         df = load_data(city, month, day)
@@ -11,5 +32,16 @@ This code consist is structured by
         trip_duration_stats(df)
         user_stats(df)
 
+get_filters()
 
-In this project, you will make use of Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. You will write code to import the data and answer interesting questions about it by computing descriptive statistics. You will also write a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
+load_data(city, month, day)
+
+time_stats(df)
+
+station_stats(df)
+
+trip_duration_stats(df)
+
+user_stats(df)
+
+
