@@ -27,6 +27,7 @@ This project was structured on the following functions:
 
         city, month, day = get_filters()
         df = load_data(city, month, day)
+        display_df(df)
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
