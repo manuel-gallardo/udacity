@@ -55,3 +55,10 @@ This project was structured on the following functions:
     user_stats(df)
         This function will displays categorical statistics count of mens/women and birth year. 
 
+
+
+REFERENCES
+
+https://realpython.com/python-keyerror/
+
+https://stackoverflow.com/questions/53037698/how-can-i-find-the-most-frequent-two-column-combination-in-a-dataframe-in-python
