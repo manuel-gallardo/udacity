@@ -1,6 +1,7 @@
 # Explore US Bikeshare Data
 
-The following project consist to build a python program to analise statistics of for three major cities in the United States—Chicago, New York City, and Washington.
+This project consist to build a python program to analise statistics of for three major cities in the United States—Chicago, New York City, and Washington.
+Therefore, this could lead to futher analysis like to obtain results of best usage, avoiding long riding from a single user, type of users, most popular station, etc.
 
 
 ## Dataset
@@ -19,7 +20,6 @@ Meanwhile, Chicago and New York City datasets also have the following two column
     Gender (Male or Male)
     Birth Year (e.g., 1975)
 
-Time
 
 ## Project structure
 
@@ -31,17 +31,27 @@ This project was structured on the following functions:
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+    
+    get_filters()  
+        This function will asks user to specify a city, month, and day to analyze. It was used dictionaries of cities and month to avoid 
+        some missconfussion when user type their preference. The output to next functions are city as string, month as string, day as string. 
 
-get_filters()
+    load_data(city, month, day)
+        Acording with preference of city, month and day, it will filter the dataframe based on the user selection and it will return as dataframe.
 
-load_data(city, month, day)
+    display_df(df)
+        Due to the project's requirement, this function will ask to user to display the first 5 raw data available of the selected input of the 
+        previous function.
 
-time_stats(df)
+    time_stats(df)
+        This function will display statistics on the most frequent times of travel. 
 
-station_stats(df)
+    station_stats(df)
+        This function will displays statistics on the most popular stations and trip
 
-trip_duration_stats(df)
+    trip_duration_stats(df)
+        This function will displays statistics on the total and average trip duration
 
-user_stats(df)
-
+    user_stats(df)
+        This function will displays categorical statistics count of mens/women and birth year. 
 
