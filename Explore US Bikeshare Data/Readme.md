@@ -1,7 +1,6 @@
 # Explore US Bikeshare Data
 
-This project consist to build a python program to analise statistics of for three major cities in the United States—Chicago, New York City, and Washington.
-Therefore, this could lead to futher analysis like to obtain results of best usage, avoiding long riding from a single user, type of users, most popular station, etc.
+This project consist to build a python program to analise statistics of for three major cities in the United States—Chicago, New York City, and Washington. Therefore, this could lead to futher analysis like to obtain results of best usage, avoiding long riding from a single user, type of users, most popular station, etc.
 
 
 ## Dataset
@@ -35,10 +34,10 @@ This project was structured on the following functions:
     
     get_filters()  
         This function will asks user to specify a city, month, and day to analyze. It was used dictionaries of cities and month to avoid 
-        some missconfussion when user type their preference. The output to next functions are city as string, month as string, day as string. 
+        some missconfussion when user type their preference. The output are city as string, month as string, day as string. 
 
     load_data(city, month, day)
-        Acording with preference of city, month and day, it will filter the dataframe based on the user selection and it will return as dataframe.
+        According with preference of city, month and day, it will filter the dataframe based on the user selection and it will return as dataframe.
 
     display_df(df)
         Due to the project's requirement, this function will ask to user to display the first 5 raw data available of the selected input of the 
